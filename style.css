@@ -1,9 +1,13 @@
-#resume-form{
+/* #resume-form{
     display: none;
-}
+} */
 
 .myImage{
 
     border-radius: 50%;
     width: 200px;
+}
+
+#resume-template{
+    display: none;
 }
