@@ -52,3 +52,70 @@ function addNewExpField(){
     const experienceContainer = document.getElementById('experienceContainer');
     experienceContainer.appendChild(expNewCardBody);
 }
+
+//generate resume function
+function generateResume(){
+
+    //name
+    let nameField = document.getElementById('nameField').value;
+    let nameT1 = document.getElementById('nameT1');
+    let nameT2 = document.getElementById('nameT2')
+    nameT1.innerHTML = nameField;
+    nameT2.innerHTML = nameField;
+
+    //city
+    let cityField = document.getElementById('cityField').value;
+    let cityT = document.getElementById('cityT');
+    cityT.innerHTML = cityField;
+
+    //objective
+    let objectiveField = document.getElementById('objectiveField').value;
+    let objectiveT = document.getElementById('objectiveT');
+    objectiveT.innerHTML = objectiveField;
+
+    //phone number
+    document.getElementById('phoneT').innerHTML = document.getElementById('phoneField').value;
+
+    //portfolio
+    document.getElementById('portfolioT').innerHTML =  document.getElementById('websiteField').value;
+    //email
+    document.getElementById('gmailT').innerHTML = document.getElementById('emailField').value;
+
+    //github
+    document.getElementById('githubT').innerHTML = document.getElementById('githubField').value;
+
+    //linkedin
+    document.getElementById('linkedinT').innerHTML = document.getElementById('linkedinField').value;
+
+    //college name
+    document.getElementById('collegeT').innerHTML = document.getElementById('collegeField').value;
+
+    //college duration
+    document.getElementById('collegeDurationT').innerHTML = document.getElementById('dateField').value;
+
+    //college city
+    document.getElementById('collegeCityT').innerHTML = document.getElementById('educationCityField').value;
+
+    //college degree
+    document.getElementById('degreeFieldT').innerHTML = document.getElementById('degreeField').value;
+
+    //college additional info
+    document.getElementById('collegeInfoT').innerHTML = document.getElementById('collegeInfoField').value;
+
+    //cgpa
+    document.getElementById('cgpaT').innerHTML = document.getElementById('cgpaField').value;
+    // let cgpa = document.getElementById('cgpaField').value;
+    // let cgpaT = document.getElementById('cgpaT');
+    // cgpaT.innerHTML = cgpa;
+    
+
+
+
+
+
+
+
+
+
+
+} 

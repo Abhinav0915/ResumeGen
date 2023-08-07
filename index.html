@@ -107,13 +107,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="class-group mt-1">
-                                    <label for="percentageField">Percentage/CGPA</label>
-                                    <input type="text" id="percentageField" placeholder="Percentage or CGPA" class="form-control my-1">
+                                    <label for="cgpaField">Percentage/CGPA</label>
+                                    <input type="text" id="cgpaField" placeholder="Percentage or CGPA" class="form-control my-1">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group mt-2 ">
-                            <label for="additionalInfoField">Additional Information(Optional)</label>
+                            <label for="additionalInfoField">Skills</label>
                             <textarea name="additionalInfoField" id="additionalInfoField" cols="30" rows="4" class="form-control my-1"></textarea>
                         
                         </div>
@@ -223,14 +223,18 @@
                 <!-- first col -->
                 <img src="/assets/dp.jpg" alt="" class="img-fluid myImage">
                 
-                <div class="container">
+                <div class="container mt-3">
                     
                     <p id="nameT1">Abhinav Saxena</p>
+                    <p id="cityT">Kanpur</p>
                     <p id="objectiveT">Motivated Web Developer</p>
-                    <p class="phoneT">+91 7565893606</p>
+                    <p id="phoneT">+91 7565893606</p>
                     <hr>
                     <p>
-                        <a href="#" id="googleT">Google</a>
+                        <a href="#" id="portfolioT">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="#" id="gmailT">Gmail</a>
                     </p>
                     <p>
                         <a href="#" id="githubT">Github</a>
@@ -243,7 +247,7 @@
             <div class="col-md-8 py-3">
                 <h1 class="text-center" style="font-weight: 900;" id="nameT2">Abhinav Saxena</h1>
 
-                <!-- Objective Card -->
+                <!-- Education Card -->
                 <div class="card mt-4">
                     <div class="card-header" style="background-color: aqua;">
                         <h3>Education</h3>
@@ -251,14 +255,14 @@
                     <div class="card-body">
                        
                             <div>
-                                <span class="collegeT">Bennett Univeristy</span><span class="float-end collegeDurationT">2020-2024</span>
-                                <p class="text-primary">Greater Noida</p>
+                                <span id="collegeT">Bennett Univeristy</span><span class="float-end" id="collegeDurationT">2020-2024</span>
+                                <p class="text-primary" id="collegeCityT">Greater Noida</p>
                                
                             </div>
                             <div>
-                                <span class="degreeFieldT">B.Tech in Computer Science</span>
-                                <span class="float-end percentageFieldT">CGPA: 9.0</span>
-                                </div>
+                                <span id="degreeFieldT">B.Tech in Computer Science</span>
+                                <p class="text-secondary" id="cgpaT">9.0</p>
+                            </div>
                     </div>
                 </div>
                 <!-- Work Experience Card -->
@@ -296,8 +300,6 @@
                         <div>
                             <div>
                                 <span class="pNameFieldT">Ethos</span>  <span class="float-end pDurationFieldT">July 2023 - August 2023</span>
-                               
-                               
                             </div>
                             <div>
                                 Description
