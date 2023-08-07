@@ -99,23 +99,28 @@ function generateResume(){
     //college degree
     document.getElementById('degreeFieldT').innerHTML = document.getElementById('degreeField').value;
 
-    //college additional info
-    document.getElementById('collegeInfoT').innerHTML = document.getElementById('collegeInfoField').value;
-
     //cgpa
     document.getElementById('cgpaT').innerHTML = document.getElementById('cgpaField').value;
-    // let cgpa = document.getElementById('cgpaField').value;
-    // let cgpaT = document.getElementById('cgpaT');
-    // cgpaT.innerHTML = cgpa;
+
+    //company
+    document.getElementById('companyFieldT').innerHTML = document.getElementById('companyField').value;
     
+    //job title
+    document.getElementById('jobFieldT').innerHTML = document.getElementById('jobField').value;
 
+    //job duration
+    document.getElementById('jobDurationFieldT').innerHTML = document.getElementById('jobDurationField').value;
 
+    //we
+    let wes = document.querySelector('.weField');
+    let str = '';
 
+    for(let e of wes){
+        str = str + `<li> ${e.value} </li>`;
+    }
+    document.getElementById('jobdescriptionFieldT').innerHTML = str;
 
-
-
-
-
-
+    //college additional info
+    document.getElementById('collegeInfoT').innerHTML = document.getElementById('collegeInfoField').value;
 
 } 
