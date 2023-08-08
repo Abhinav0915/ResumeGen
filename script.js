@@ -108,19 +108,41 @@ function generateResume(){
     //job title
     document.getElementById('jobFieldT').innerHTML = document.getElementById('jobField').value;
 
+    //job skills
+    document.getElementById('jobSkillsT').innerHTML = document.getElementById('weSkills').value;
+    
     //job duration
     document.getElementById('jobDurationFieldT').innerHTML = document.getElementById('jobDurationField').value;
 
-    //we
-    let wes = document.querySelector('.weField');
-    let str = '';
+    //project name
+    document.getElementById('pNameFieldT').innerHTML = document.getElementById('pNameField').value;
 
-    for(let e of wes){
-        str = str + `<li> ${e.value} </li>`;
-    }
-    document.getElementById('jobdescriptionFieldT').innerHTML = str;
+    //project description
+    document.getElementById('pDescriptionFieldT').innerHTML = document.getElementById('pDescriptionField').value;
 
+
+    // //project duration 
+    // document.getElementById('pDurationFieldT').innerHTML = document.getElementById('pDurationField').value;
+
+   
+    document.getElementById('resume-form').style.display = 'none';
+    document.getElementById('resume-template').style.display = 'block';
+  
     //college additional info
     document.getElementById('collegeInfoT').innerHTML = document.getElementById('collegeInfoField').value;
 
+
+
+
+
 } 
+
+function printResume(){
+    window.print();
+}
+
+
+function generateAgainResume(){
+    document.getElementById('resume-form').style.display = 'block';
+    document.getElementById('resume-template').style.display = 'none';
+}

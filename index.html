@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="col-md-6 mt-4" id="we">
-                <div class="card weField">
+                <div class="card " id="weField">
                     <div class="card-header">
                       Work Experience
                     </div>
@@ -155,8 +155,8 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="jobdescriptionField">Description</label>
-                                <input type="text" id="jobdescriptionField" placeholder="Add Description" class="form-control my-1">
+                                <label for="weSkills">Skills</label>
+                                <input type="text" id="weSkills" placeholder="Add Skill" class="form-control my-1">
                             </div>
                             <div class="row text-end mt-3">
                                 <div class="col-md-12">
@@ -280,10 +280,9 @@
                             </div>
                             <div>
                                 <p></p>
-                                <ul class="jobdescriptionFieldT">
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
+                                <ul>
+                                    <li id="jobSkillsT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
+                                  
                                 </ul>
                             </div>
                         </div>
@@ -297,17 +296,17 @@
                     <div class="card-body">
                         <div>
                             <div>
-                                <span class="pNameFieldT">Ethos</span>  <span class="float-end pDurationFieldT">July 2023 - August 2023</span>
+                                <span id="pNameFieldT">Ethos</span>  <div class="float-end d-inline" id="pDurationFieldT">July 2023 - August 2023</div>
                             </div>
+                            <p></p>
                             <div>
-                                Description
+                                <p>Description</p>
+                                
                             </div>
                             <div>
                                 <p></p>
-                                <ul class="pDescriptionFieldT" >
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
+                                <ul>
+                                    <li id="pDescriptionFieldT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</li>
                                 </ul>
                             </div>
                         </div>
@@ -316,6 +315,9 @@
                 <div class="container mt-3 text-center">
                     <button class="btn" onclick="printResume()" style="background-color: aqua;">
                         Print Resume
+                    </button>
+                    <button class="btn" onclick="generateAgainResume()" style="background-color: aqua;">
+                        Generate Again
                     </button>
                 </div>
                 <!-- second col -->
